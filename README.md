@@ -11,6 +11,10 @@
 
 Welcome to the **AI on Demand (AIoD) Metadata Catalogue**! This repository hosts the REST API for the metadata catalogue, which serves as a central hub for indexing, managing, and searching metadata related to artificial intelligence resources (datasets, models, tools, and more).
 
+<p align="center">
+  <img src="docs/images/repo-structure-screenshot.png" alt="Repository Structure Overview" width="800" />
+</p>
+
 This project acts as the backend layer that enables rich cataloging features, relying on **MySQL** for relational data persistence, **Elasticsearch** for high-performance full-text search and filtering, and **Keycloak** for robust authentication and authorization.
 
 ---
@@ -140,6 +144,11 @@ If you prefer to run the FastAPI server natively on your machine while keeping t
 ## 📖 Using the API
 
 The easiest way to interact with the API locally is through the **Swagger UI** (`http://localhost:8000/docs`).
+
+<p align="center">
+  <em>(Replace this placeholder with a screenshot of the Swagger UI)</em><br>
+  <img src="docs/images/swagger-ui-screenshot.png" alt="Swagger API Interface" width="800"/>
+</p>
 
 1. **Authentication**: Before making requests that require authorization, you must obtain a token via Keycloak. In the Swagger UI, click the **Authorize** button and log in.
 2. **Endpoints**: The catalogue uses versioned APIs (e.g., `/v1/...`). You will find endpoints to manage `datasets`, `models`, `publications`, `experiments`, and `nodes`.
